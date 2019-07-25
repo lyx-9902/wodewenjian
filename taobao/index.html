@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div class="out">
+    <div class="title">
+        <div class="left"><img src="images/back.png" alt=""></div>
+        订单列表
+        <div class="right"><img src="images/qhome.png" alt=""></div>
+    </div>
+    <div class="banner">
+        <img src="images/supchok.png" alt="">
+        <p> 交易成功</p>
+    </div>
+    <div class="dili">
+        <img src="images/position.png" alt="">
+        <div>
+
+            收货人 :
+            小林<br>
+            收货地址:
+            北京北京市海淀区清河街道安宁庄西路宣海家园11号
+        </div>
+
+    </div>
+    <div class="shop">
+        <img src="images/gift1.png" alt="">
+        <p> 农夫果院水果超市</p>
+    </div>
+
+    <ul>
+        <li>
+            <img src="images/food2.png" alt="">
+            <div class="left">
+                [海报畅销]草原情休闲奶酪酸奶条150g/袋
+                <br>
+                颜色：米黄（香甜型）
+                <br>
+                x1
+            </div>
+            <div class="right" style="color: red">￥6.8</div>
+        </li>
+        <li>
+            <img src="images/food2.png" alt="">
+            <div class="left">
+                [海报畅销]草原情休闲奶酪酸奶条150g/袋
+                <br>
+                颜色：米黄（香甜型）
+                <br>
+                x1
+            </div>
+            <div class="right" style="color: red">￥6.8</div>
+        </li>
+        <li>
+            <img src="images/food2.png" alt="">
+            <div class="left">
+                [海报畅销]草原情休闲奶酪酸奶条150g/袋
+                <br>
+                颜色：米黄（香甜型）
+                <br>
+                x1
+            </div>
+            <div class="right" style="color: red">￥6.8</div>
+        </li>
+
+    </ul>
+    <div class="shop">
+        <img src="images/gift1.png" alt="">
+        <p> 农夫果院水果超市</p>
+    </div>
+    <div class="link">
+        <div>
+            <img src="images/callout.png" alt="">
+            联系卖家
+        </div>
+        <div>
+            <img src="images/comein.png" alt="">
+            进入店铺
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="left">
+
+            订单编号
+            1512416963576882 <br>
+            支付宝交易号 <br>
+            2015112421001001550234697927 <br>
+            创建时间
+            2018-11-24 09:58:06 <br>
+            付款时间:
+            2018-11-24 09:58:20 <br>
+        </div>
+        <div class="right">复制</div>
+
+    </div>
+
+    <div class="dital">
+        <p class="top">你可能还想要</p>
+        <div class="ditalBox">
+
+            <div class="left">
+                <img src="images/fruit.png" alt="">
+                <p>千禧果</p>
+                <p style="color: red">￥9.8</p>
+            </div>
+            <div class="mid">
+                <img src="images/fruit.png" alt="">
+                <p>千禧果</p>
+                <p style="color: red">￥9.8</p>
+            </div>
+            <div class="right">
+                <img src="images/fruit.png" alt="">
+                <p>千禧果</p>
+                <p style="color: red">￥9.8</p>
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="del">
+    <div>删除订单</div>
+</div>
+</div>
+
+</body>
+<script>
+
+    function setRem() {
+        // ui设计图的宽度
+        var uiW = 320,
+            // 视口宽度
+            winW = document.documentElement.clientWidth;
+        // 比率
+        ratio = winW / uiW;
+        // 设置字体大小
+        document.documentElement.style.fontSize = ratio * 100 + "px";
+    }
+
+    // 调用方法
+    setRem();
+    window.onresize = setRem;
+
+
+</script>
+</html>
