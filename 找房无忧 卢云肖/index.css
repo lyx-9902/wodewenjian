@@ -1,0 +1,452 @@
+/*logo部分*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    font-size: 100px;
+}
+
+header {
+    width: 100%;
+    height: 0.42rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FF8A00;
+}
+
+header div {
+    width: 1rem;
+    /*height: .5rem;*/
+    /*background-color: #009966;*/
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header .left img {
+    width: 1rem;
+    /*height: .5rem;*/
+}
+
+header .right img {
+    width: .3rem;
+    height: .3rem;
+}
+
+header .right img:first-child {
+    margin-right: .1rem;
+}
+
+/*查找图部分*/
+.lookingfor {
+    width: 100%;
+    height: .6rem;
+    background-color: #F5F5F5;
+    background-size: cover;
+    position: relative;
+    top: 0;
+}
+
+.lookingfor form {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    width: 100%;
+}
+
+.lookingfor form input {
+    border-radius: 6px;
+    width: 2.89rem;
+    height: 0.35rem;
+    position: absolute;
+    left: 0.15rem;
+    bottom: 0.1rem;
+    box-shadow: 1px 1px beige;
+    text-indent: .4rem;
+    color: #8f8f8f;
+    outline: medium;
+}
+
+.lookingfor form span {
+    display: block;
+    width: .2rem;
+    height: 0.2rem;
+    background-color: #0000A8;
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.18rem;
+    z-index: 2;
+    background: url(image/index/seach.jpg);
+    background-size: cover;
+}
+
+/*<!--tab切换部分 区域 价格 房型 更多 -->*/
+.tabBox {
+    font-size: .14rem;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.tabBox .tablist { /*ul标签*/
+    display: flex;
+    list-style: none;
+    position: relative;
+    z-index: 3;
+}
+
+.tabBox .tablist li {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    line-height: .4rem;
+    color: black;
+}
+
+.tabBox .tablist li span {
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color: transparent transparent transparent;
+    position: absolute;
+    top: 14px;
+    left: 71px;
+}
+
+.tabhideul {
+    /*background-color: #e9931a;*/
+    list-style: none;
+    position: relative;
+    z-index: 9;
+}
+
+.hide {
+    width: 100%;
+    height: 100%;
+    background-color: #7a7a7a96;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+/*隐藏框 第一个*/
+.tabhideul > .one {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+}
+
+.tabhideul .one .left {
+    border-right: 1px #efebeb solid;
+    background-color: #F0F0F0;
+    flex: 1;
+    text-align: center;
+}
+
+.tabhideul .one .right {
+    /*background-color: #2bd0ff;*/
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabhideul .one .right ul {
+    list-style: none;
+}
+
+.tabhideul .one .right > .toptitle {
+    flex: 1;
+    float: left;
+    /*width: 100%;*/
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.tabhideul .one .right > .toptitle > li {
+    flex: 1;
+    justify-content: center;
+    float: left;
+    width: 1.1rem;
+    height: .4rem;
+    /*border: 1px black solid;*/
+}
+
+.tabhideul .one .right > .totUl {
+    flex: 1;
+    font-size: .14rem;
+
+}
+
+.tabhideul .one .right > .totUl > li {
+    float: left;
+    width: 45%;
+    height: 0.25rem;
+    text-align: center;
+
+}
+
+.tabhideul .one .right > .totUl > li a {
+    text-decoration: none;
+    color: #140f0a;
+}
+
+/*第二个盒子*/
+.tabhideul > .hidelist-line {
+    width: 100%;
+    /*height: 2rem;*/
+    display: none;
+}
+
+.tabhideul > .two {
+    width: 100%;
+
+}
+
+.tabhideul > .two > ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tabhideul > .two > ul > li {
+    height: 0.4rem;
+    line-height: 0.2rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+/*第三个 显示li*/
+
+.tabhideul .three > ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabhideul .three > ul > li {
+    height: 0.4rem;
+    line-height: 0.2rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+
+}
+
+.tabhideul .three > ul > li > span {
+    width: 0.14rem;
+    height: 0.15rem;
+    float: right;
+    margin-top: 0.12rem;
+    margin-right: 0.2rem;
+    border: 1px solid #c5c3c3;
+
+}
+
+.tabhideul .three > ul > li > a {
+    text-align: center;
+    background: #ff8a00;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+/*第4个 显示li*/
+
+
+
+.tabhideul .four > .child-Ul {
+    list-style: none;
+    width: 100%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+.tabhideul .four > .child-Ul > .child-li {
+    width: 100%;
+
+}
+
+.tabhideul .four > .child-Ul > .child-li > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.tabhideul .four > .child-Ul > .child-li > ul > li {
+
+    width: .4rem;
+    height: .2rem;
+    border: 1px #CCCCCC solid;
+    text-align: center;
+}
+/*4个 显示框结束*/
+
+/*.tabhideul .one {*/
+    /*!*display: block;破坏弹性盒子*!*/
+    /*display: flex;*/
+/*}*/
+
+
+/*banner图部分2*/
+.banner2 img {
+    width: 100%;
+}
+
+.hot h2 {
+    font-size: .2rem;
+    background-color: #FF8A00;
+    /*margin-left: .3rem;*/
+    padding-left: .3rem;
+    color: white;
+}
+
+.hot h2 span {
+    font-size: .1rem;
+}
+
+.hot ul {
+    font-size: .1rem;
+    margin: 0rem .1rem;
+    list-style: none;
+}
+
+.hot ul li {
+    margin: 0.2rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hot ul li img {
+    width: 0.8rem;
+    height: .8rem;
+}
+
+.hot > ul > li > .text > h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 1.87rem;
+}
+
+.hot > ul > li > .text > p > a {
+    text-decoration: none;
+    background-color: #F4F7F9;
+    padding: 0.02rem 0.04rem;
+    color: #999999;
+}
+
+.hot > ul > li > .text > p {
+    line-height: .22rem;
+}
+
+.hot {
+    margin-bottom: .1rem;
+}
+
+/*脚步*/
+
+/*脚步*/
+
+footer {
+    font-size: .16rem;
+    background-color: #2F3130;
+    color: #939494;
+    padding: 0.2rem .1rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px;
+    margin: .2rem;
+}
+
+footer ul li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+}
+
+footer ul li img {
+    width: .3rem;
+    height: .3rem;
+    margin-right: .1rem;
+}
+
+footer h5 {
+    font-size: .18rem;
+    border-bottom: 1px #939494 solid;
+    height: .5rem;
+}
+
+footer > div {
+    text-align: center;
+
+}
+
+footer > div p {
+    margin-top: .1rem;
+}
+
+.download {
+    position: fixed;
+    bottom: 1px;
+    background-color: #97959575;
+    z-index: 2;
+    width: 100%;
+    height: .5rem;
+    color: white;
+    display: flex;
+    padding-left: .2rem;
+}
+.download .img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: .2rem;
+    height: .2rem
+}
+.download .img img{
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.download .right{
+    /*padding-top: .2rem;*/
+    flex: 4;
+    background-color: #e9931a;
+    /*width: .2rem;*/
+    /*height: .2rem;*/
+    font-size: 1.2rem;
+    color: white;
+}
+.download .left{
+    /*padding-top: .2rem;*/
+    flex: 6;
+    font-size: .12rem;
+    display: flex;
+}
+.download .right >p{
+    font-size: .18rem;
+
+}
+

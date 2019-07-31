@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    font-size: 100px;
+}
+
+header {
+    width: 100%;
+    height: 0.42rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FF8A00;
+}
+
+header div {
+    width: 1rem;
+    /*height: .5rem;*/
+    /*background-color: #009966;*/
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header .left img {
+    width: 1rem;
+    /*height: .5rem;*/
+}
+
+header .right img {
+    width: .3rem;
+    height: .3rem;
+}
+
+header .right img:first-child {
+    margin-right: .1rem;
+}
+
+/*头部位置结束*/
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    /*height: 1rem;*/
+}
+
+.banner-detal > h2 {
+    font-size: .14rem;
+    margin-left: .1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.banner-detal ul {
+    font-size: .14rem;
+    margin: 0rem .1rem;
+}
+
+.banner-detal ul li {
+    line-height: .26rem;
+
+}
+
+.banner-detal > ul > li > #span {
+    float: right;
+    padding: 10px;
+    display: block;
+    height: .2rem;
+    width: .2rem;
+
+}
+
+.banner-detal > ul > li > #span > img {
+    height: .2rem;
+    width: .2rem;
+}
+
+.banner-detal > ul > li > span {
+    background-color: #DEE9F0;
+}
+
+/*homemasege  房子文字信息*/
+.homemasege {
+    width: 100%;
+    font-size: .14rem;
+}
+
+.homemasege > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 .3rem;
+    line-height: .3rem;
+}
+
+
+.homemasege > ul > li {
+    width: 100%;
+    display: flex;
+justify-content: space-around;
+    border-bottom: 1px rgba(179, 176, 176, 0.33) solid;
+
+}
+
+.homemasege > ul > li > .left {
+    float: left;
+width: 50%  ;
+}
+
+.homemasege > ul > li > .right {
+    float: right;
+    width: 50%  ;
+}
+
+.homemasege >h3{
+    font-weight: lighter;
+}
+
+
+/*<section class="snack" 更换特色>*/
+
+
+.snack{
+    font-size: .14rem;
+    padding: .2rem .2rem .2rem  .2rem ;
+    border-top: .2rem #F5F5F5 solid;
+}
+.snack p{
+    font-size: .14rem;
+    line-height: .3rem;
+}
+.snack >h4{
+    text-align: left;
+}
+.snack >h5{
+    text-align: center;
+}
+
+
+/*引入hot*/
+/*banner图部分2*/
+.banner2 img {
+    width: 100%;
+}
+
+.hot h2 {
+    font-size: .2rem;
+    padding-left: .3rem;
+    color: white;
+}
+
+.hot h2 span {
+    font-size: .1rem;
+}
+
+.hot ul {
+    font-size: .1rem;
+    margin: 0rem .1rem;
+    list-style: none;
+}
+
+.hot ul li {
+    border-bottom: 1px #FFC107 solid;
+    margin: 0.2rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hot ul li img {
+    width: 0.8rem;
+    height: .8rem;
+}
+
+.hot > ul > li > .text > h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 1.87rem;
+}
+
+.hot > ul > li > .text > p > a {
+    text-decoration: none;
+    background-color: #F4F7F9;
+    padding: 0.02rem 0.04rem;
+    color: #999999;
+}
+
+.hot > ul > li > .text > p {
+    line-height: .22rem;
+}
+
+.hot {
+    margin-bottom: .1rem;
+
+    border-top: .2rem #F5F5F5 solid;
+    border-bottom : .2rem #F5F5F5 solid;
+}
+/*<!--对口学校-->*/
+
+#homemasege{
+    font-size: .12rem;
+    border-bottom: .2rem #F5F5F5 solid;
+
+}
+#homemasege .left{
+    width: 40%;
+}
+#homemasege .right{
+    width: 60%;
+}
+
+#homemasege  h3{
+    margin-left: .3rem;
+}
+/*地图*/
+
+.arear{
+    width: 100%;
+    height: 2rem;
+    /*background-color: #00AEEA;*/
+}
+.arear h3{
+    font-size: .2rem;
+    margin: .2rem .2rem;
+}
+/*房源推荐*/
+
+.hottuijian li .world{
+    width: 80%;
+
+}
+#hottuijian h3{
+    font-size: .14rem;
+    text-align: center;
+}
+
+
+.map{
+    width: 100%;
+    height: 1.6rem;
+}
+
+
+
+/*脚步*/
+
+footer {
+    font-size: .16rem;
+    background-color: #2F3130;
+    color: #939494;
+    padding: 0.2rem .1rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px;
+    margin: .2rem;
+}
+
+footer ul li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+}
+
+footer ul li img {
+    width: .3rem;
+    height: .3rem;
+    margin-right: .1rem;
+}
+
+footer h5 {
+    font-size: .18rem;
+    border-bottom: 1px #939494 solid;
+    height: .5rem;
+}
+
+footer > div {
+    text-align: center;
+
+}
+
+footer > div p {
+    margin-top: .1rem;
+}
+
+.download {
+    position: fixed;
+    bottom: 1px;
+    background-color: #97959575;
+    z-index: 2;
+    width: 100%;
+    height: .5rem;
+    color: white;
+    display: flex;
+    padding-left: .2rem;
+}
+.download .img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: .2rem;
+    height: .2rem
+}
+.download .img img{
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.download .right{
+    /*padding-top: .2rem;*/
+    flex: 4;
+    background-color: #e9931a;
+    /*width: .2rem;*/
+    /*height: .2rem;*/
+    font-size: 1.2rem;
+    color: white;
+}
+.download .left{
+    /*padding-top: .2rem;*/
+    flex: 6;
+    font-size: .12rem;
+    display: flex;
+}
+.download .right >p{
+    font-size: .18rem;
+
+}
+
+
+

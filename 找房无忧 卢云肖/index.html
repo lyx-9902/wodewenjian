@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>找房无忧首页LYX</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body {
+        width: 100%;
+        font-size: 100px;
+    }
+
+    header {
+        width: 100%;
+        height: 0.42rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FF8A00;
+    }
+
+    header div {
+        width: 1rem;
+        /*height: .5rem;*/
+        /*background-color: #009966;*/
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    header .left img {
+        width: 1rem;
+        /*height: .5rem;*/
+    }
+
+    header .right img {
+        width: .3rem;
+        height: .3rem;
+    }
+
+    header .right img:first-child {
+        margin-right: .1rem;
+    }
+
+    /*查找图部分*/
+    .lookingfor {
+        width: 100%;
+        height: 2.24rem;
+        background-color: #d88d3e;
+        background: url("image/index/banner.png") 0 0 no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 0;
+    }
+
+    .lookingfor form {
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
+        width: 100%;
+    }
+
+    .lookingfor form input {
+        border-radius: 6px;
+        width: 2.89rem;
+        height: 0.35rem;
+        position: absolute;
+        left: 0.15rem;
+        bottom: 0.1rem;
+        box-shadow: 1px 1px beige;
+        text-indent: .4rem;
+        color: #8f8f8f;
+        outline: medium;
+    }
+
+    .lookingfor form span {
+        display: block;
+        width: .2rem;
+        height: 0.2rem;
+        background-color: #0000A8;
+        position: absolute;
+        left: 0.3rem;
+        bottom: 0.18rem;
+        z-index: 2;
+        background: url(image/index/seach.jpg);
+        background-size: cover;
+    }
+
+    /*<!--banner图部分-->*/
+    .banner1List {
+        width: 100%;
+        height: 1rem;
+        background-color: #FF8A00;
+        padding-top: .1rem;
+    }
+
+    .banner1List ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .banner1List ul li {
+        width: .5rem;
+        height: .5rem;
+        background-color: #888588;
+        font-size: .16rem;
+        position: relative;
+    }
+
+    .banner1List ul li a {
+        position: absolute;
+        left: 0.1rem;
+        bottom: -.3rem;
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .banner1List ul li:nth-of-type(1) {
+        background: url("image/index/index_03.png") 0 0 no-repeat;
+        background-size: contain;
+    }
+
+    .banner1List ul li:nth-of-type(2) {
+        background: url("image/index/index_05.png") 0 0 no-repeat;
+        background-size: contain;
+    }
+
+    .banner1List ul li:nth-of-type(3) {
+        background: url("image/index/index_07.png") 0 0 no-repeat;
+        background-size: contain;
+    }
+
+    .banner1List ul li:nth-of-type(4) {
+        background: url("image/index/index_09.png") 0 0 no-repeat;
+        background-size: contain;
+    }
+
+    /*banner图部分2*/
+    .banner2 img {
+        width: 100%;
+    }
+
+    .hot h2 {
+        font-size: .2rem;
+        background-color: #FF8A00;
+        /*margin-left: .3rem;*/
+        padding-left: .3rem;
+        color: white;
+    }
+
+    .hot h2 span {
+        font-size: .1rem;
+    }
+
+    .hot ul {
+        font-size: .1rem;
+        margin: 0rem .1rem;
+        list-style: none;
+    }
+
+    .hot ul li {
+        margin: 0.2rem 0rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hot ul li img {
+        width: 0.8rem;
+        height: .8rem;
+    }
+
+    .hot > ul > li > .text > h1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 1.87rem;
+    }
+
+    .hot > ul > li > .text > p > a {
+        text-decoration: none;
+        background-color: #F4F7F9;
+        padding: 0.02rem 0.04rem;
+        color: #999999;
+    }
+
+    .hot > ul > li > .text > p {
+        line-height: .22rem;
+    }
+
+    .hot {
+        margin-bottom: .1rem;
+    }
+
+    /*<!--底部热门和链接-->*/
+
+    .title {
+        font-size: .2rem;
+        border-top: .1rem #F5F5F5 solid;
+    }
+
+    .title ul {
+        list-style: none;
+        display: flex;
+        border-bottom: 1px coral solid;
+    }
+
+    .title ul li {
+        flex: 1;
+        text-align: center;
+
+    }
+
+    .title ul li :first-child {
+        border-bottom: 1px coral solid;
+    }
+
+    .content {
+        /*background-color: orange;*/
+        display: flex;
+        font-size: .16rem;
+    }
+
+    .content ul {
+        list-style: none;
+        flex: 1;
+        /*background-color: red;*/
+        /*height: 1rem;*/
+        margin: .1rem 0 .1rem .3rem;
+    }
+
+    .content ul li {
+        line-height: .3rem;
+        font-size: .14rem;
+        color: #a6a6a6;
+    }
+
+    /*脚步*/
+
+    footer {
+        font-size: .16rem;
+        background-color: #2F3130;
+        color: #939494;
+        padding: 0.2rem .1rem;
+    }
+
+    footer ul {
+        display: flex;
+        list-style: none;
+        border-bottom: 1px;
+        margin: .2rem;
+    }
+
+    footer ul li {
+        flex: 1;
+        text-align: center;
+        display: flex;
+    }
+
+    footer ul li img {
+        width: .3rem;
+        height: .3rem;
+        margin-right: .1rem;
+    }
+
+    footer h5 {
+        font-size: .18rem;
+        border-bottom: 1px #939494 solid;
+        height: .5rem;
+    }
+
+    footer > div {
+        text-align: center;
+
+    }
+
+    footer > div p {
+        margin-top: .1rem;
+    }
+
+    .download {
+        position: fixed;
+        bottom: 1px;
+        background-color: #97959575;
+        z-index: 2;
+        width: 100%;
+        height: .5rem;
+        color: white;
+        display: flex;
+        padding-left: .2rem;
+    }
+    .download .img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: .2rem;
+        height: .2rem
+    }
+    .download .img img{
+        width: .2rem;
+        height: .2rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .download .right{
+        /*padding-top: .2rem;*/
+        flex: 4;
+        background-color: #e9931a;
+        /*width: .2rem;*/
+        /*height: .2rem;*/
+        font-size: 1.2rem;
+        color: white;
+    }
+    .download .left{
+        /*padding-top: .2rem;*/
+        flex: 6;
+        font-size: .12rem;
+        display: flex;
+    }
+    .download .right >p{
+        font-size: .18rem;
+
+    }
+</style>
+<body>
+<!--logo标志部分-->
+<header>
+    <div class="left">
+        <img src="image/index/logo.jpg" alt="">
+    </div>
+    <div class="right">
+        <img src="image/index/my.jpg" alt="">
+        <img src="image/index/xiazai.jpg" alt="">
+
+    </div>
+</header>
+<!--查找功能部分-->
+<section class="lookingfor">
+    <form action="#">
+        <span></span>
+        <input type="search" placeholder="请输入小区或商圈开始找房了">
+    </form>
+</section>
+<!--banner图部分-->
+<section class="banner1">
+    <div class="banner1List">
+        <ul>
+            <li><a href="#">新房</a></li>
+            <li><a href="#">新房</a></li>
+            <li><a href="#">新房</a></li>
+            <li><a href="#">新房</a></li>
+
+        </ul>
+
+    </div>
+
+
+</section>
+<!--banner图部分2-->
+<section class="banner2">
+    <img src="image/index/banner2.png" alt="">
+</section>
+<!--热门房源-->
+<section class="hot">
+    <h2> 热门房源
+        <br>
+        <span>hot house</span>
+    </h2>
+    <ul>
+        <li>
+            <div class="img"><img src="image/index/img1.jpg" alt=""></div>
+            <div class="text">
+                <h1> 文化部中间层 一层带阁楼</h1>
+                <p>2室1厅96㎡南北 <strong style="float: right ;color: red"> 1105万</strong></p>
+                <p>红庙北里 <span style="float: right">14268元/平</span></p>
+                <p>
+                    <a href="#">学区房</a>
+                    <a href="#">独家</a>
+                </p>
+            </div>
+
+        </li>
+        <li>
+            <div class="img"><img src="image/index/img1.jpg" alt=""></div>
+            <div class="text">
+                <h1> 文化部中间层 一层带阁楼</h1>
+                <p>2室1厅96㎡南北 <strong style="float: right ;color: red"> 1105万</strong></p>
+                <p>红庙北里 <span style="float: right">14268元/平</span></p>
+                <p>
+                    <a href="#">学区房</a>
+                    <a href="#">独家</a>
+                </p>
+            </div>
+
+        </li>
+        <li>
+            <div class="img"><img src="image/index/img1.jpg" alt=""></div>
+            <div class="text">
+                <h1> 文化部中间层 一层带阁楼</h1>
+                <p>2室1厅96㎡南北 <strong style="float: right ;color: red"> 1105万</strong></p>
+                <p>红庙北里 <span style="float: right">14268元/平</span></p>
+                <p>
+                    <a href="#">学区房</a>
+                    <a href="#">独家</a>
+                </p>
+            </div>
+
+        </li>
+    </ul>
+</section>
+<!--底部热门和链接-->
+<section class="linkworld">
+    <div class="title">
+        <ul>
+            <li style="color: #ffe84d">热门关注</li>
+            <li>友情链接</li>
+        </ul>
+
+
+    </div>
+    <div class="content">
+        <ul>
+            <li> 北京二手房</li>
+            <li> 北京二手房价</li>
+            <li>海淀日租房</li>
+            <li> 朝阳新房</li>
+        </ul>
+        <ul>
+            <li>北京找房无忧</li>
+            <li> 青年家园</li>
+            <li> 免税房源</li>
+            <li> 满五年唯一免税</li>
+        </ul>
+
+    </div>
+
+
+</section>
+<!--底部-->
+<footer>
+    <h5>北京找房无忧 > 首页</h5>
+    <ul>
+        <li>
+            <img src="image/index/android.png" alt="">
+            <div>
+                <p> Android</p>
+                <p> 客户端</p>
+            </div>
+
+        </li>
+        <li>
+            <img src="image/index/apple.png" alt="">
+            <div>
+                <p> Android</p>
+                <p> 客户端</p>
+            </div>
+
+        </li>
+    </ul>
+    <div>
+        <p>北京找房无忧房地产经纪公司</p>
+        <p>网络经营许可证京ICP备20160812号</p>
+    </div>
+
+
+</footer>
+<!--底部悬浮框-->
+<div class="download">
+   <div class="img">
+       <img src="image/index/close.png" alt="">
+   </div>
+    <div class="left">
+       <div><img src="image/index/download.png" alt=""></div>
+        <div class="text">
+            <p> 找房无忧</p>
+            <p>市场行情，一手掌握！</p>
+        </div>
+    </div>
+    <div class="right">
+        <p>免费下载</p>
+    </div>
+</div>
+
+
+</body>
+<script src="js/rem.js"></script>
+<script src="js/zepto.js"></script>
+<script>
+    $(".download .img").click(function () {
+        // alert(1)
+   $(".download").css("display","none")
+    })
+
+
+</script>
+
+
+</html>
